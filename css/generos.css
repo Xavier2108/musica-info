@@ -1,0 +1,240 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+
+}
+header{
+	display: flex;
+	justify-content: space-between;
+	padding: 2rem;
+	background-color: rgb(25, 4, 39);
+}
+.logo{
+	max-width: 5rem;
+	align-items: center;
+}
+.nav-lista{
+	display: flex;
+	list-style-type: none;
+	gap: 2rem;
+	font-size: 1.25rem;
+}
+.nav-lista li a{
+	text-decoration: none;
+	color: rgb(240, 240, 245);
+	font-weight: bolder;
+}
+.menu-abierto,
+	.cerrar-menu{
+		display: none;
+	}
+
+.home{
+    background-color: blueviolet;
+}
+
+.contacto{
+    background-color: rgb(25, 4, 39);
+    color: rgb(208, 219, 224);
+    padding: 150px 0;
+}
+
+
+.fila{
+    display: flex;
+}
+
+.col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+
+.info{
+    position: absolute;
+    top: 40%;
+    background-color: rgb(59, 20, 85);
+    padding: 20px;
+    width: 650px; 
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-bottom: 20px;
+}
+
+.col input{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: rgb(197, 188, 188);
+    color: rgb(10, 10, 10);
+    font-size: 18px; 
+}
+
+
+@media screen and (max-width: 550px) {
+	.menu-abierto,
+	.cerrar-menu{
+		display: block;	
+		border: 0;
+		font-size: 1.25rem;
+		background-color: transparent;
+		cursor: pointer;
+		color: aliceblue;	
+	}
+	.nav{
+		opacity: 0;
+		visibility: hidden;
+
+		display: flex;
+		flex-direction: column;
+		align-items: end;
+		gap: 1rem;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgb(2, 2, 16);
+		padding: 2rem;
+		box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+
+	}
+
+	.nav.visible{
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.nav-lista{
+		flex-direction: column;
+		align-items: end;
+	}
+	
+	.nav-lista li a{
+		color: rgba(216, 6, 146, 0.993);
+
+	}
+
+	.home{
+        width: auto;
+        margin: auto;
+    } 
+    .col, .fila{
+		width: auto;
+		margin: auto;
+	}
+
+	.fila{
+		display: block;
+	}
+	
+	.fila .col{
+		width: 100%;
+		margin-top: 100px;
+	}
+
+}
+#btnScrollToTop {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    display: none;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  .infom {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  img {
+    max-width: 7rem;
+    margin-right: 20px;
+    
+  }
+  
+  
+  #rock {
+    background-color: rgb(161, 108, 197);
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+  
+  #pop {
+    background-color: rgb(161, 108, 197);
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+  
+  #electronica {
+    background-color: rgb(161, 108, 197);
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+
+  #rap {
+    background-color: rgb(161, 108, 197);
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+
+  #rb {
+    background-color: rgb(161, 108, 197);
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+
+  #jazz {
+    background-color: rgb(161, 108, 197);
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+
+  #clasica {
+    background-color: rgb(161, 108, 197);
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+
+  #country {
+    background-color: rgb(161, 108, 197);
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+
+  #reggae {
+    background-color: rgb(161, 108, 197);
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+
+  #metal {
+    background-color: rgb(161, 108, 197);
+    padding: 20px;
+    margin-bottom: 40px;
+  }

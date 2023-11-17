@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Trivia</title>
+  <link rel="stylesheet" href="../css/trivia.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Trivia Game</h1>
+    <H2>Preguntas sobre musica y acerca de la pagina :)</H2>
+    <div id="question-container">
+      <p id="question">Las pregunta aparecerán aquí.</p>
+      <div id="options" class="options"></div>
+    </div>
+    <button id="next-btn" class="btn" onclick="nextQuestion()">Siguiente</button>
+    <button class="btn" onclick="restartGame()">Reniciar</button>
+    <div id="result" class="result"></div>
+  </div>
+
+  <script src="../js/trivia.js"></script>
+</body>
+</html>
